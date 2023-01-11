@@ -1,5 +1,9 @@
 {
   "devDependencies": {
-    "cypress": "^12.3.0"
+    "cypress": "^12.3.0",
+    "cypress-slow-down": "^1.2.1"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.7"
   }
 }
