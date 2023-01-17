@@ -13,7 +13,7 @@ describe('Testing the Testrunner', () => {
     afterEach(()=>{
         const daysVar = require("dayjs");
         const nowTime = daysVar().format("DD.MM.YYYY HH:mm:ss")
-        cy.screenshot('database_data_ '+ Cypress.currentTest.title + nowTime)
+        cy.screenshot(`database_data_ ${Cypress.currentTest.title}${nowTime}`)
     })
 
     it('Neutral choice', ()=> {
@@ -134,6 +134,7 @@ describe('Testing the Testrunner', () => {
     })
     
     cy.get('button[type="submit"]').should('contain', 'weiter').click()
+    cy.wait(50)
     
     /*cy.get('h1').should('contain', 'End').then(()=>{
         cy.screenshot('database_data_Neutral '+ nowTime)})*/
@@ -259,6 +260,7 @@ describe('Testing the Testrunner', () => {
     })
     
     cy.get('button[type="submit"]').should('contain', 'weiter').click()
+    cy.wait(50)
     
     /*cy.get('h1').should('contain', 'End').then(()=>{
         cy.screenshot('database_data_Agree '+ nowTime)})*/
@@ -377,6 +379,8 @@ describe('Testing the Testrunner', () => {
     })
     
     cy.get('button[type="submit"]').should('contain', 'weiter').click()
+    cy.wait(50)
+
     /*cy.get('h1').should('contain', 'End').then(()=>{
         cy.screenshot('database_data_Disagree '+ nowTime)})*/
    // cy.get('div a').should('contain','back to Start').click()
@@ -483,7 +487,8 @@ describe('Testing the Testrunner', () => {
         )
     })
     cy.get('button[type="submit"]').should('contain', 'weiter').click()
-    
+    cy.wait(50)
+
     /*cy.get('h1').should('contain', 'End').then(()=>{
         cy.screenshot('database_data_Disagree '+ nowTime)})*/
 
