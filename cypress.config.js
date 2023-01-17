@@ -7,7 +7,7 @@ module.exports = defineConfig({
     },
     env: {
       // https://github.com/bahmutov/cypress-slow-down
-      commandDelay: 300,
+      commandDelay: 450,
     },
     specPattern: '**/*.js',
     chromeWebSecurity:false,
