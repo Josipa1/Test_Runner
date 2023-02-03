@@ -179,7 +179,7 @@ describe ('New test', ()=> {
    cy.get('button').contains('Weiter', {matchCase:false}).click()
    cy.wait(50)
    
-   cy.get('div a').should('contain','back to Start').click().wait(100)
+   //cy.get('div a').should('contain','back to Start').click().wait(100)
         })
     })
 

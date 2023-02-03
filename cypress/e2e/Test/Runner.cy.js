@@ -13,7 +13,7 @@ describe('Testing the Testrunner', () => {
     afterEach(()=>{
         const daysVar = require("dayjs");
         const nowTime = daysVar().format("DD.MM.YYYY HH:mm:ss")
-        cy.screenshot(`database_data_ ${Cypress.currentTest.title}${nowTime}`)
+        cy.screenshot(`database_data_  ${Cypress.currentTest.title}${nowTime}`)
     })
 
     it('Neutral choice', ()=> {
