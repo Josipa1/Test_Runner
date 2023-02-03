@@ -13,7 +13,7 @@ module.exports = defineConfig({
     chromeWebSecurity:false,
     trashAssetsBeforeRuns:false,
     defaultCommandTimeout: 2500,
-    //retries: 2
+    retries: 2
 
   },
 });
